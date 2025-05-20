@@ -4,7 +4,7 @@ This document outlines key technical and architectural decisions made during the
 
 ---
 
-## ✅ 1. Microservice Architecture
+## 1. Microservice Architecture
 
 **Decision:** Use a microservice architecture instead of a monolith.
 
@@ -16,7 +16,7 @@ This document outlines key technical and architectural decisions made during the
 
 ---
 
-## ✅ 2. Programming Language: Go (Golang)
+## 2. Programming Language: Go (Golang)
 
 **Decision:** Write all services in Go.
 
@@ -28,7 +28,7 @@ This document outlines key technical and architectural decisions made during the
 
 ---
 
-## ✅ 3. Render for Deployment
+## 3. Render for Deployment
 
 **Decision:** Deploy to [Render](https://render.com) instead of using Docker/Kubernetes.
 
@@ -40,7 +40,7 @@ This document outlines key technical and architectural decisions made during the
 
 ---
 
-## ✅ 4. TLS Termination at the Proxy
+## 4. TLS Termination at the Proxy
 
 **Decision:** Perform TLS termination inside `proxy-service`.
 
@@ -51,7 +51,7 @@ This document outlines key technical and architectural decisions made during the
 
 ---
 
-## ✅ 5. Custom Load Balancing Strategies
+## 5. Custom Load Balancing Strategies
 
 **Decision:** Implement internal support for multiple load balancing strategies (`round-robin`, `least-connections`, etc.)
 
@@ -62,7 +62,7 @@ This document outlines key technical and architectural decisions made during the
 
 ---
 
-## ✅ 6. Prometheus-Compatible Metrics
+## 6. Prometheus-Compatible Metrics
 
 **Decision:** Use Prometheus metrics format via `metrics-service`.
 
@@ -73,7 +73,7 @@ This document outlines key technical and architectural decisions made during the
 
 ---
 
-## ✅ 7. Environment-Based Configuration
+## 7. Environment-Based Configuration
 
 **Decision:** Use `.env` files and environment variables for config.
 
@@ -84,7 +84,7 @@ This document outlines key technical and architectural decisions made during the
 
 ---
 
-## ✅ 8. Optional Services (Auth, Config, Metrics)
+## 8. Optional Services (Auth, Config, Metrics)
 
 **Decision:** Modularize optional functionality into their own services.
 
@@ -95,7 +95,7 @@ This document outlines key technical and architectural decisions made during the
 
 ---
 
-## 🧭 Future Design Considerations
+## Future Design Considerations
 
 - **Plugin system** for routing, authentication, and transformation
 - **Admin API** for runtime control of routing rules and backend pools
@@ -104,7 +104,7 @@ This document outlines key technical and architectural decisions made during the
 
 ---
 
-## 🗂 Related Docs
+## Related Docs
 
 - [architecture.md](./architecture.md)
 - [config-reference.md](./config-reference.md)
